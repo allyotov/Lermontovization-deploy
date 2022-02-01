@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  bot:
+    image: allyotov/lermontovization:1.0.0
+    networks:
+      - lermontovization_network
+    env_file: .env
+
+networks:
+  lermontovization_network:
